@@ -5,12 +5,12 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'secret-key'
 
-    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'jady1'
-    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'Uj/vIdT4q4flFpgGHBsk/iEZ5jo3pXhcdEd6yfSBigeZmJbFT4oBuk7ErIM5rMjWQddo5vuHEBjCn70gmljoFw=='
+    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'jady2'
+    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'VpmFFmKfyDZWSnrUd4S8ASr9SqgNl3++FKN+TVbldjbQfGmMRHZhzsiB1NBnlqrt7lCVS2G2x+oTqGif5aVX3Q=='
     BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'images'
 
     SQL_SERVER = os.environ.get('SQL_SERVER') or 'feloh.database.windows.net'
-    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'Felo1'
+    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'Jady'
     SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'jady'
     SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or '#379(eTiH.'
     # Below URI may need some adjustments for driver version, based on your OS, if running locally
@@ -19,7 +19,7 @@ class Config(object):
 
     ### Info for MS Authentication ###
     ### As adapted from: https://github.com/Azure-Samples/ms-identity-python-webapp ###
-    CLIENT_SECRET = "yopo43XCW*oy"
+    CLIENT_SECRET = "9pS~uCYZ4w9U61.KwPxRb~2hYH2.j-N811"
     # In your production app, Microsoft recommends you to use other ways to store your secret,
     # such as KeyVault, or environment variable as described in Flask's documentation here:
     # https://flask.palletsprojects.com/en/1.1.x/config/#configuring-from-environment-variables
@@ -30,7 +30,7 @@ class Config(object):
     AUTHORITY = "https://login.microsoftonline.com/udacitylabs.onmicrosoft.com"  # For multi-tenant app, else put tenant name
     # AUTHORITY = "https://login.microsoftonline.com/Enter_the_Tenant_Name_Here"
 
-    CLIENT_ID = "7cdc1500-2983-42ac-8290-98240ccc1744"
+    CLIENT_ID = "441633f7-2325-4e8b-8dde-b81787735915"
 
     REDIRECT_PATH = "/getAToken"  # Used to form an absolute URL; must match to app's redirect_uri set in AAD
 
