@@ -5,8 +5,8 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'secret-key'
 
-    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'jady2'
-    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'VpmFFmKfyDZWSnrUd4S8ASr9SqgNl3++FKN+TVbldjbQfGmMRHZhzsiB1NBnlqrt7lCVS2G2x+oTqGif5aVX3Q=='
+    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'jady1'
+    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'WZUTMFg/54x59YZB5dX5BKwtk2dUjBoFNRYASwhXwXwC4BmvEFpAMzRuQx+OUmuL/BR26NiikCnCDs4SkDUl3w=='
     BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'images'
 
     SQL_SERVER = os.environ.get('SQL_SERVER') or 'feloh.database.windows.net'
